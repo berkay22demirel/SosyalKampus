@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.berkay22demirel.sosyalkamps.AnaGirisActivity"
+    android:orientation="vertical">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            app:srcCompat="@drawable/isletmefoto"
+            android:id="@+id/imageViewEtkinlikVeyaMekanlarImage"
+            android:layout_weight="0"
+            android:layout_height="100dp"
+            android:layout_width="match_parent" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4">
+
+                <TextView
+                    android:text="Mekan Adı"
+                    android:layout_width="match_parent"
+                    android:id="@+id/textViewEtkinlikVeyaMekanlarMekanAdi"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="Mekan Adresi"
+                    android:layout_width="match_parent"
+                    android:id="@+id/textViewEtkinlikVeyaMekanlarMekanAdresi"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:text="Mekan Telefonu"
+                    android:layout_width="match_parent"
+                    android:id="@+id/textViewEtkinlikVeyaMekanlarMekanTelefonu"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+            <Button
+                android:text="YER BİLDİRİMİ YAP"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonEtkinlikVeyaMekanlarYerBildirimiYap"
+                android:backgroundTint="@color/colorBlue"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_weight="0.6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="0.4"
+                android:background="@color/colorLightGrey"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:text="YORUM YAP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGrey"
+                android:layout_weight="0.4"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextEtkinlikVeyaMekanlarYorumYap"
+                android:hint="Yorum yap..." />
+            <Button
+                android:text="YORUM YAP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonEtkinlikVeyaMekanlarYorumYap"
+                android:backgroundTint="@color/colorLightGreen"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="0.4"
+                android:background="@color/colorLightGrey"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:text="YORUMLAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGrey"
+                android:layout_weight="0.4"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:id="@+id/listViewEtkinlikVeyaMekanlarYorumlar" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="0.4"
+            android:background="@color/colorLightGrey"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:text="Arkadaş Ekle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorLightGrey"
+            android:layout_weight="0.4"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <Button
+        android:text="ARKADAŞ EKLE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonArkadasListesi"
+        android:backgroundTint="@color/colorBlue"
+        android:textColor="@color/colorWhite" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="0.4"
+            android:background="@color/colorLightGrey"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:text="Arkadaş Listen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorLightGrey"
+            android:layout_weight="0.4"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewArkadasListesi" />
+</LinearLayout>

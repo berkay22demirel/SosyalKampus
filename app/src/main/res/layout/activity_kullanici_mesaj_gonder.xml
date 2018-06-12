@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kullanici_mesaj_gonder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.berkay22demirel.sosyalkamps.KullaniciMesajGonderActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Alıcı : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewMesajGonderAlici"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextMesajGonderIcerik"
+        android:layout_marginBottom="20dp"
+        android:hint="Mesajınızı giriniz..."
+        android:lines="5"
+        android:maxLength="255" />
+
+    <Button
+        android:text="MESAJI GÖNDER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMesajGonderGonder"
+        android:backgroundTint="@color/colorBlue"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>
